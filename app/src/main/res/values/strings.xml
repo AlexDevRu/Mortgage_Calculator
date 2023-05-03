@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Learning_Android_Mortgage_Calculator_Kulakov</string>
+    <string name="credit_sum">Сумма кредита</string>
+    <string name="property_type">Тип недвижимости</string>
+    <string name="credit_time">Срок кредита</string>
+    <string name="rate">Ставка, %</string>
+    <string name="payment_type">Вид платежа</string>
+    <string name="differrentiated">Дифференцированный</string>
+    <string name="annuity">Аннуитетный</string>
+    <string name="calculate">Рассчитать</string>
+
+    <string-array name="property_types">
+        <item>Любой</item>
+        <item>Частные жилые дома</item>
+        <item>Многоквартирные дома</item>
+    </string-array>
+
+    <string-array name="credit_times">
+        <item>5 лет</item>
+        <item>10 лет</item>
+        <item>15 лет</item>
+    </string-array>
+
+    <string name="monthly_payment_line">Ежемесячный платеж по кредиту - %.2f\n</string>
+    <string name="overpayment_line">Переплата по кредиту - %.2f\n</string>
+    <string name="percent_payment_line">%d-ый месяц - %.2f\n</string>
+</resources>
