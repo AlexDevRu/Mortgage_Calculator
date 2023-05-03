@@ -4,6 +4,7 @@ import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
+import kotlin.math.pow
 
 class MainViewModel(private val app: Application): AndroidViewModel(app) {
 
@@ -56,7 +57,7 @@ class MainViewModel(private val app: Application): AndroidViewModel(app) {
         } else {
             val i = rate / 100 / 12
             val n = creditTime.value!! * 12.0
-            val k = (i * Math.pow(1 + i, n))/(Math.pow(1 + i, n) - 1)
+            val k = (i * (1 + i).pow(n))/((1 + i).pow(n) - 1)
             val a = k * creditSum
             report.append(app.getString(R.string.monthly_payment_line, a))
 
